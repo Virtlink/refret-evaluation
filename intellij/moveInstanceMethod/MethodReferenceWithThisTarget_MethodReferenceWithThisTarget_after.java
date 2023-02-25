@@ -1,0 +1,15 @@
+test;
+[MethodReferenceWithThisTarget]
+    import java.util.function.Consumer;
+  
+  class Source {
+  }
+  
+  class Destination {
+    public void doSomething(String s) {
+    }
+  
+      public void foo() {
+        Consumer<String> doSomething = this::doSomething;
+      }
+  }

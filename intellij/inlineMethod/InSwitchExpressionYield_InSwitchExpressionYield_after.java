@@ -1,0 +1,12 @@
+test;
+[InSwitchExpressionYield]
+    class X {
+      enum E {A}
+  
+      void print(E e) {
+          int p = switch (e) {
+              case A -> 42;
+          }
+      }
+  
+  }

@@ -1,0 +1,14 @@
+test;
+[ReturnStatementWithoutBraces]
+    class JavaClass {
+    String bar() {
+      return "bar";
+    }
+  
+    String baz(boolean condition) {
+      if (condition)
+          return "bar";
+  
+      return "default";
+    }
+  }

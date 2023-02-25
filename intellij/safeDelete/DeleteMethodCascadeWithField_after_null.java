@@ -1,0 +1,5 @@
+test;
+[DeleteMethodCascadeWithField]
+    class Foo {
+  
+  }

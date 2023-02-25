@@ -1,0 +1,6 @@
+test;
+[TernaryBranchCollapsible]
+    class X {
+    int x = Math.random() > 0.5 ? (1 * 1 + 2 * 2) / (3 * 3) + 1 : 0;
+  
+  }

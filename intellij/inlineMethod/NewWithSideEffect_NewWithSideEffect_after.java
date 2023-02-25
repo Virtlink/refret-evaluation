@@ -1,0 +1,20 @@
+test;
+[NewWithSideEffect]
+    public class Foo {
+      public static void main(String[] args) {
+          X x = new X();
+          System.out.println(1);
+          System.out.println(x);
+      }
+  
+      static class X {
+          X() {
+              System.out.println(0);
+          }
+  
+          @Override
+          public String toString() {
+              return "2";
+          }
+      }
+  }

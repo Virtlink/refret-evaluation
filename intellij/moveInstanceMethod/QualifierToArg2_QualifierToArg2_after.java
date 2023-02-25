@@ -1,0 +1,26 @@
+test;
+[QualifierToArg2]
+    class CommandQueue {
+  
+      void f(CommandManager commandManager) {
+        commandManager.g();
+      }
+  }
+  
+  class CommandManager {
+  
+      void g() {
+  
+      }
+  
+      CommandQueue getCommandQueue() {
+          return null;
+      }
+  }
+  
+  class Application {
+      CommandManager myManager;
+      {
+          myManager.getCommandQueue().f(myManager);
+      }
+  }

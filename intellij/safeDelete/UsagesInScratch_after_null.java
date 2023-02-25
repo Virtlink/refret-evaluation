@@ -1,0 +1,4 @@
+test;
+[UsagesInScratch]
+    class Test {
+  }

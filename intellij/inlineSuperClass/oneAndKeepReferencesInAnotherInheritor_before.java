@@ -1,0 +1,22 @@
+test;
+[Super]
+    class Super {
+    public static final String CONST = "CONST";
+  }
+  
+[Test]
+    abstract class Test extends Sup<caret>er {
+    {
+      System.out.println(CONST);
+      System.out.println(Super.CONST);
+    }
+  }
+  abstract class Test1 extends Super {
+    {
+      System.out.println(CONST);
+      System.out.println(Super.CONST);
+    }
+  }
+  abstract class Test2{
+    System.out.println(Super.CONST);
+  }

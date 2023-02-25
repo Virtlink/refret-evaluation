@@ -1,0 +1,20 @@
+test;
+[QualifyThisHierarchy]
+    public class D {
+    protected void iAmProtected() {
+    }
+  }
+  
+  class DImpl extends D {
+  }
+  
+  class F {
+  
+      void foo(D d) {
+        class MyRunnable {
+          public void run() {
+            d.iAmProtected();
+          }
+        }
+      }
+  }

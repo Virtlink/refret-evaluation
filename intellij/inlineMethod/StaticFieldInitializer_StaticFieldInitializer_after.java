@@ -1,0 +1,12 @@
+test;
+[StaticFieldInitializer]
+    class A{
+      static int field;
+  
+      static {
+          doSomething();
+          field = 1;
+      }
+  
+  }
+  
