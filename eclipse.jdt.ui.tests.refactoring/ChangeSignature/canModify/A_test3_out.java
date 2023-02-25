@@ -4,9 +4,9 @@ test;
     package p;
   class A{
   	private void m(
-  	 int j,
-  	 int i){
-  		m(j, i);
+  	 int [[1|j]],
+  	 int [[2|i]]){
+  		m([[->1|j]], [[->2|i]]);
   	}
   }
 }
