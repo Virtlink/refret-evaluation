@@ -1,0 +1,5 @@
+test;
+[A]
+    
+  class A{
+  }

@@ -1,0 +1,28 @@
+test;
+[p] {
+[B]
+    package p;
+  class B {
+  	/** Comment */
+  	private final A a;
+  
+  	/**
+  	 * @param a
+  	 */
+  	B(A a) {
+  		this.a= a;
+  	}
+  
+  	public void execute() {
+  		B b = p.B.this;
+  		synchronized (this.a) {
+  			System.err.println();
+  		}
+  	}
+  }
+[A]
+    package p;
+  public class A {
+  }
+  
+}

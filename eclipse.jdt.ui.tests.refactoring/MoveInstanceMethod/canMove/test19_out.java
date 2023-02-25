@@ -1,0 +1,65 @@
+test;
+[p] {
+[Rectangle]
+    package p;
+  
+  public class Rectangle {
+  	public int x;
+  	public int y;
+  	public int width;
+  	public int height;
+  
+  	public Rectangle (int x, int y, int width, int height) {
+  		this.x = x;
+  		this.y = y;
+  		this.width = width;
+  		this.height = height;
+  	}
+  
+  	public int getWidth() {
+  		return width;
+  	}
+  
+  	public int getHeight() {
+  		return height;
+  	}
+  
+  	/**
+  	 * Is smaller
+  	 * @param shape TODO
+  	 * @return boolean
+  	 */
+  	public boolean isSmallerThan(Shape shape) {
+  		return shape.area() < getWidth() * getHeight();
+  	}
+  }
+  
+[Shape]
+    package p;
+  
+  public class Shape {
+  	Rectangle fBounds;
+  	Rectangle fInnerBounds;
+  
+  	public int area() {
+  		int width= fBounds.getWidth();
+  		int height= fBounds.getHeight();
+  		return width*height;
+  	}
+  
+  	public int filledArea() {
+  		return area() -	fInnerBounds.getWidth() * fInnerBounds.getHeight();
+  	}
+  
+  	/**
+  	 * Is smaller
+  	 * @param rect
+  	 * @return boolean
+  	 */
+  	public boolean isSmallerThan(Rectangle rect) {
+  		return rect.isSmallerThan(this);
+  	}
+  
+  }
+  
+}

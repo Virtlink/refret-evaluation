@@ -1,0 +1,9 @@
+test;
+[p] {
+[A]
+    //rename to j
+  package p;
+  interface A{
+  	void m(int i);
+  }
+}
