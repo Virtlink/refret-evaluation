@@ -8,14 +8,14 @@ test;
   	void m(){
   		int g= f;
   	}
-  	public int getF(){
+  	public int [[1|getF]](){
   		return f;
   	}
   }
   class B{
   	int m(){
   		A a= new A();
-  		return a.getF();
+  		return [[->1|a.getF]]();
   	}
   }
 }

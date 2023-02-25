@@ -6,16 +6,16 @@ test;
   class A{
   	private int f;
   	void m(){
-  		int g= getF();
+  		int g= [[->1|getF]]();
   	}
-  	public int getF(){
+  	public int [[1|getF]](){
   		return f;
   	}
   }
   class B{
   	int m(){
   		A a= new A();
-  		return a.getF();
+  		return [[->1|a.getF]]();
   	}
   }
 }

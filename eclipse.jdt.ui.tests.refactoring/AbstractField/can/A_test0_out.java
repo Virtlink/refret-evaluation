@@ -3,12 +3,12 @@ test;
 [A]
     package p;
   class A{
-  	private int f;
+  	private int [[1|f]];
   	void m(){
   		int g= getF();
   	}
   	private int getF(){
-  		return f;
+  		return [[->1|f]];
   	}
   }
 }
