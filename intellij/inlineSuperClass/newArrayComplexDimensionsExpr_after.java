@@ -1,8 +1,8 @@
 test;
 [Test]
     class Test {
-      static int bar(){return 1;}
-  
+      static int [[1|bar]](){return 1;}
+
       void foo() {
         Test s = new Test();
         s.bar();
@@ -11,6 +11,6 @@ test;
 [Usage]
     class Usage {
     void ba() {
-      Test[][] s = new Test[Test.bar()][];
+      Test[][] s = new Test[ [[->1|bar|Test.bar]]()][];
     }
   }

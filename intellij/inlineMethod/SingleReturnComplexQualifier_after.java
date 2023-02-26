@@ -1,33 +1,33 @@
 test;
 [Test]
     class Bar {
-  
-      int methodTrue() {
+
+      int [[t|methodTrue]]() {
       return 3;
     }
-  
-    int methodFalse() {
+
+    int [[f|methodFalse]]() {
       return 5;
     }
   }
-  
+
   class Foo {
     // IDEA-229317
     void method() {
         Bar bar2 = new Bar();
-  
-        System.out.println(bar2.methodTrue());
+
+        System.out.println([[->t|methodTrue|bar2.methodTrue]]());   // TODO: context
         Bar bar1 = new Bar();
-  
-        System.out.println(bar1.methodFalse());
+
+        System.out.println([[->f|methodFalse|bar1.methodFalse]]());   // TODO: context
         int result;
         Bar bar = new Bar();
         if (Math.random() > 0.5) {
-            result = bar.methodTrue();
+            result = [[->t|methodTrue|bar.methodTrue]]();   // TODO: context
         } else {
-            result = bar.methodFalse();
+            result = [[->f|methodFalse|bar.methodFalse]]();   // TODO: context
         }
-  
+
         System.out.println(result);
     }
   }

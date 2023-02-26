@@ -2,8 +2,8 @@ test;
 [Test]
     class Test {
     public void context() {
-      method();
+      [[->1|method]]();
     }
-  
-      public void method() {}
+
+      public void [[1|method]]() {}
   }

@@ -6,17 +6,17 @@ test;
           BitString other = super.getBitwiseMask();
           long intersectMask = mask & other.myMask;
           if ((result & mask & intersectMask) == (other.myBits & intersectMask)) {
-              intersection = new BitString(result & mask | other.myBits, mask | other.myMask);
+              intersection = new BitString(result & mask | [[->b|myBits|other.myBits]], mask | [[->m|myMask|other.myMask]]);        // TODO: Context
           }
           assert intersection != null;
           return intersection;
       }
   }
-  
+
   class BitString {
-      final long myBits;
-      final long myMask;
-  
+      final long [[b|myBits]];
+      final long [[m|myMask]];
+
       BitString(long bits, long mask) {
           myBits = bits & mask;
           myMask = mask;

@@ -1,18 +1,18 @@
 test;
 [Test]
     class A {
-  
+
       Integer f(int i) {
-          Integer result;
+          Integer [[2|result]];
           if (i > 0) {
-              result = new Integer(i);
+              [[->1|result]] = new Integer(i);
           }
           else {
-              Integer result;
-              result = new Integer(0);
-              result = result;
+              Integer [[1|result]];
+              [[->1|result]] = new Integer(0);
+              [[->1|result]] = [[->1|result]];
           }
           return result;
       }
-  
+
   }

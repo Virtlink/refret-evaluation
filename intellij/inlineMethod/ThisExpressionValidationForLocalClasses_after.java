@@ -7,14 +7,14 @@ test;
     }
     void n() {}
   }
-  
+
   class B extends A {
-    void n() {}
+    void [[1|n]]() {}
   }
-  
+
   class C extends B {
     {
         class Local {}
-        n();
+        [[->1|n]]();
     }
   }

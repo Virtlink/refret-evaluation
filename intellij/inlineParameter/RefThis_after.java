@@ -1,18 +1,21 @@
 test;
 [Subject]
     class User {
+
+      int [[1|hashCode]]() { return 0; }
+
     public class Subject {
       private int myInt;
-  
+
       public void withClass() {
-        myInt += User.this.hashCode();
+        myInt += [[->1|hashCode|User.this.hashCode]]();   // TODO: Context
       }
     }
-  
+
     private void oper() {
       Subject subj = new Subject();
       subj.withClass();
     }
   }
-  
-  
+
+

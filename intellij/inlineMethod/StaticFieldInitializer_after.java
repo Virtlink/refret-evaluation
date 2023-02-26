@@ -1,12 +1,12 @@
 test;
 [Test]
     class A{
-      static int field;
-  
+      static int [[1|field]];
+
       static {
           doSomething();
-          field = 1;
+          [[->1|field]] = 1;
       }
-  
+
   }
-  
+

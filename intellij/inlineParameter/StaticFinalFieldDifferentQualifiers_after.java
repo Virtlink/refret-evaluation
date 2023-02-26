@@ -1,17 +1,17 @@
 test;
 [A]
     public class A {
-    void test() {
-      String[] myValue = CONST;
+    void [[2|test]]() {
+      String[] myValue = [[->1|CONST]];
     }
-  
+
     void callTest() {
-      test();
+      [[->2|test]]();
     }
-  
+
     void callTest2() {
-      test();
+      [[->2|test]]();
     }
-  
-    public static final String[] CONST = new String[] { "A", "B" };
+
+    public static final String[] [[1|CONST]] = new String[] { "A", "B" };
   }

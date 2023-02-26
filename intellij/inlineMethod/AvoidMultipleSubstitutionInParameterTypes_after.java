@@ -1,15 +1,15 @@
 test;
 [Test]
-    
+
   import java.util.Collection;
   import java.util.LinkedHashSet;
   import java.util.List;
-  
+
   class A {
-    <T> void bar(List<T> root, LinkedHashSet<List<T>> list) {
-        nested(list, root);
+    <T> void bar(List<T> [[1|root]], LinkedHashSet<List<T>> [[2|list]]) {
+        [[->3|nested]]([[->2|list]], [[->1|root]]);
     }
-  
-  
-      private static <S> void nested(Collection<S> result, S element) {}
+
+
+      private static <S> void [[3|nested]](Collection<S> result, S element) {}
   }

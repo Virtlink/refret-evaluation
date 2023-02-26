@@ -1,9 +1,9 @@
 test;
 [Test]
     class Test {
-      public int i;
-  
+      public int [[1|i]];
+
       public void usage() {
-          int i = this.i;
+          int i = [[->1|i|this.i]];
       }
   }

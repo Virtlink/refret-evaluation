@@ -1,17 +1,17 @@
 test;
 [Test]
     class A {
-    void foo(){
+    void [[1|foo]](){
       //do smth in A
     }
   }
-  
+
   class B {
-  
+
       void test(){
-          super.foo();
+          [[->1|foo|super.foo]]();
       }
-  
+
     void foo() {
       //do smth
     }

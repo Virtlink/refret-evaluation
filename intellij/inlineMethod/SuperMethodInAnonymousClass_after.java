@@ -1,23 +1,23 @@
 test;
 [Test]
     class A {
-  
+
       public void g() {
       }
     }
-  
+
     class B extends A {
-      public void g() {
-  
+      public void [[1|g]]() {
+
       }
       public void h() {
         new Runnable() {
-  
+
           @Override
           public void run() {
-              g();
+              [[->1|g]]();
           }
         }.run();
       }
     }
-  
+

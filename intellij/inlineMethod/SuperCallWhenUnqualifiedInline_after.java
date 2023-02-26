@@ -1,15 +1,15 @@
 test;
 [Test]
     class A {
-    void bar() {}
+    void [[1|bar]]() {}
   }
-  
+
   class B extends A {
     void foo() {
       super.bar();
     }
-  
+
     void err() {
-        super.bar();
+        [[->1|bar|super.bar]]();
     }
   }

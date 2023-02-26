@@ -1,12 +1,12 @@
 test;
 [Test]
     class Test {
-      protected final Object myBar;
-      protected final Object myBizz;
-  
+      protected final Object [[1|myBar]];
+      protected final Object [[2|myBizz]];
+
       public Test() {
-          Test.this.myBar = new Object() {
+          [[->1|myBar|Test.this.myBar]] = new Object() {
           };
-          Test.this.myBizz = null;
+          [[->2|myBizz|Test.this.myBizz]] = null;
       }
   }

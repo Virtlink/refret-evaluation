@@ -2,9 +2,9 @@ test;
 [Test]
     class A {
       public void usage() {
-          int array[150];
+          int [[1|array]][150];
           for (int i = 0; i < array.length; i++) {
-              System.out.println(array[i]);
+              System.out.println([[->1|array]][i]);
           }
       }
   }

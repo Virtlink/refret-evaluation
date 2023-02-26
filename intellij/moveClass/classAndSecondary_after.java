@@ -2,26 +2,26 @@ test;
 [pack2] {
 [Class1]
     package pack2;
-  
-  public class Class1 {
+
+  public class [[1|Class1]] {
   }
-  
+
   /**
    * Javadoc.
    */
-  class Class2 {
-  
+  class [[2|Class2]] {
+
   }
 }
 [pack1] {
 [User]
     package pack1;
-  
-  import pack2.Class1;
-  import pack2.Class2;
-  
+
+  import [[->1|Class1|pack2.Class1]];
+  import [[->2|Class2|pack2.Class2]];
+
   public class User {
-    Class1 class1;
-    Class2 class2;
+    [[->1|Class1]] class1;
+    [[->2|Class2]] class2;
   }
 }

@@ -1,9 +1,9 @@
 test;
 [Test]
     class Test {
-      private final String field;
-  
+      private final String [[1|field]];
+
       Test(){
-          Test.this.field = "text";
+          [[->1|field|Test.this.field]] = "text";
       }
   }

@@ -1,14 +1,14 @@
 test;
 [Test]
     class Base {
-      protected int f;
-  
-  
+      protected int [[1|f]];
+
+
   }
-  
+
   class DRV extends Base {
       void f() {
-          int f1 = f;
+          int f1 = [[->1|f]];
       }
   }
-  
+
