@@ -1,5 +1,5 @@
 test;
-[IOOBE]
+[Main]
     class A {
       void method(B b) {
       }

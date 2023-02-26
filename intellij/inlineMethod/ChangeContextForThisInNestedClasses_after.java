@@ -1,0 +1,17 @@
+test;
+[Test]
+    abstract class Test {
+  
+      void foo() {
+    }
+  }
+  class Test2 extends Test {
+  
+    {
+        new Object() {
+          void foo() {
+            Test2.this.foo();
+          }
+        };
+    }
+  }

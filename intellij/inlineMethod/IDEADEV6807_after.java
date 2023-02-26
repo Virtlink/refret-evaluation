@@ -1,0 +1,14 @@
+test;
+[Test]
+    class Base {
+      protected int f;
+  
+  
+  }
+  
+  class DRV extends Base {
+      void f() {
+          int f1 = f;
+      }
+  }
+  

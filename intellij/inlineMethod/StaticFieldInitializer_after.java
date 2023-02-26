@@ -1,0 +1,12 @@
+test;
+[Test]
+    class A{
+      static int field;
+  
+      static {
+          doSomething();
+          field = 1;
+      }
+  
+  }
+  

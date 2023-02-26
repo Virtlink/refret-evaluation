@@ -1,0 +1,17 @@
+test;
+[A]
+    public class A {
+    void test() {
+      String[] myValue = CONST;
+    }
+  
+    void callTest() {
+      test();
+    }
+  
+    void callTest2() {
+      test();
+    }
+  
+    public static final String[] CONST = new String[] { "A", "B" };
+  }

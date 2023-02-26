@@ -1,0 +1,15 @@
+test;
+[Test]
+    
+  class Foo {
+  
+    public static final Bar[] bars = new Bar[] {new Bar("a", 0, "A", "B", "C"), new Bar("b", 1, "A", "B")};
+  }
+  
+  
+  class Bar {
+  
+    public Bar(String a, int nr, String... args) {
+    }
+  
+  }

@@ -1,0 +1,5 @@
+test;
+[Test]
+    class Foo {
+  
+  }

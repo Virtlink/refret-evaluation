@@ -1,0 +1,16 @@
+test;
+[Test]
+    class A {
+      private String f;
+  
+      public void m() {
+          m1();
+      }
+  
+      private void m1() {
+          String f = this.f;
+          if (!f.isEmpty()) {
+              System.out.println(f);
+          }
+      }
+  }

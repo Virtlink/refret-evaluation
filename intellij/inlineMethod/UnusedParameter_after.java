@@ -1,0 +1,17 @@
+test;
+[Test]
+    class Temp {
+    class Set {
+      native Object size();
+    }
+  
+    public Object foo(Set bar) {
+      if (bar.size() < 2) {// Inline this
+          bar.size(); // or online this
+          return null;
+      }
+  
+      return bar;
+    }
+  
+  }

@@ -1,0 +1,16 @@
+test;
+[Test]
+    class A {
+  }
+  
+  class B {
+  
+      void bar() {
+        new Runnable() {
+          @Override
+          public void run() {
+            System.out.println(B.this);
+          }
+        }.run();
+      }
+  }

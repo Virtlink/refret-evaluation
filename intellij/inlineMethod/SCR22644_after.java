@@ -1,0 +1,16 @@
+test;
+[SuperClass]
+    public class SuperClass {
+  }
+  
+  public class SubClass extends SuperClass {
+      public void doSomethingElse() {
+          UtilClass.doSomething(this);
+      }
+  }
+  
+  public class UtilClass {
+      public static void doSomething(SuperClass superClass) {
+          // ...
+      }
+  }

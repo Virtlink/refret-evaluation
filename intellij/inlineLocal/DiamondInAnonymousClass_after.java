@@ -1,0 +1,14 @@
+test;
+[Test]
+    interface I<T> {
+    void m(T t);
+  }
+  
+  class MyTest {
+    {
+  
+        new I<String>() {
+        public void m(String s) {}
+      }.m("");
+    }
+  }

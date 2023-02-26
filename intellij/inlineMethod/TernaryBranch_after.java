@@ -1,0 +1,16 @@
+test;
+[Test]
+    class X {
+    int x;
+  
+      {
+          if (Math.random() > 0.5) {
+              int one = 1 * 1 + 2 * 2;
+              int two = 3 * 3;
+              x = one / two + 1;
+          } else {
+              x = 0;
+          }
+      }
+  
+  }

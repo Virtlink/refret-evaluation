@@ -1,0 +1,14 @@
+test;
+[Test]
+    class B extends A {
+  }
+  
+  class A {
+    void m(){}
+  }
+  
+  class C {
+      void n(B b){
+        b.m();
+      }
+  }

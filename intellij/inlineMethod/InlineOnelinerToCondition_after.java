@@ -1,0 +1,16 @@
+test;
+[Test]
+    class MyWorld {
+  
+      public void process(Object[] o) {
+      int i = 0;
+          while (o[i] instanceof String && ((String) o[i]).startsWith("hello")) {
+              i++;
+          }
+      i = 0;
+          while (!(o[i] instanceof String && ((String) o[i]).startsWith("hello"))) {
+              i++;
+          }
+    }
+  }
+  

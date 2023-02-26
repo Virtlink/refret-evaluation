@@ -1,0 +1,14 @@
+test;
+[Test]
+    class Test {
+    class A {
+      private Integer i = 0;
+  
+    }
+  
+    class B extends A {
+      void bar(A a) {
+          a.i.toString();
+      }
+    }
+  }

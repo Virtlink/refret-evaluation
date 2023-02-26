@@ -1,3 +1,0 @@
-test;
-[ShowConflictsButRemoveAnnotationsIfAnnotationTypeIsDeleted]
-    class Test {}

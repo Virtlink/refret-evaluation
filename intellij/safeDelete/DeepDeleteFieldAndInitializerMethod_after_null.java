@@ -1,7 +1,0 @@
-test;
-[DeepDeleteFieldAndInitializerMethod]
-    class Foo {
-  
-  }
-  
-  
