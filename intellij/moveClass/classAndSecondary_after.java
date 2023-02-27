@@ -3,13 +3,13 @@ test;
 [Class1]
     package pack2;
 
-  public class [[1|Class1]] {
+  public class [[@1|Class1]] {
   }
 
   /**
    * Javadoc.
    */
-  class [[2|Class2]] {
+  class [[@2|Class2]] {
 
   }
 }

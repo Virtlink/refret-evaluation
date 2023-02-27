@@ -1,7 +1,7 @@
 test;
 [StaticRefMove]
-    public class StaticRefMove {
-    public static int [[1|init]]() {
+    public class [[@2|StaticRefMove]] {
+    public static int [[@1|init]]() {
       return 1;
     }
 
@@ -13,7 +13,7 @@ test;
 
   class StaticRefMoveSubject {
     public void subject() {
-        int subj = [[->1|init|StaticRefMove.init]](); // TODO: Context
+        int subj = [[->1|&2|init|StaticRefMove.init]]();
         System.out.println(subj);
     }
   }

@@ -1,7 +1,7 @@
 test;
 [Test]
     class Test {
-      public static final int [[1|ID]]=0;
+      public static final int [[@1|ID]]=0;
 
       public Test(int id) {
       }

@@ -1,9 +1,9 @@
 test;
 [Test]
     class Test {
-      public static final String [[1|S]] = "";
+      public static final String [[@1|S]] = "";
 
-      static void [[2|foo]](){
+      static void [[@2|foo]](){
          System.out.println(S);
       }
 

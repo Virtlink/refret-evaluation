@@ -13,6 +13,6 @@ test;
 [Class2]
     package pack1;
 
-  public class [[2|Class2]] {
+  public class [[@2|Class2]] {
   }
 }

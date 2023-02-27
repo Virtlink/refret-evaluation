@@ -1,19 +1,19 @@
 test;
 [D]
     public class D {
-    protected void iAmProtected() {
+    protected void [[@1|iAmProtected]]() {
     }
   }
-  
+
   class DImpl extends D {
   }
-  
+
   class F {
-  
-      void foo(D d) {
+
+      void foo(D [[@2|d]]) {
         class MyRunnable {
           public void run() {
-            d.iAmProtected();
+            [[->1|&2|iAmProtected|d.iAmProtected]]();
           }
         }
       }

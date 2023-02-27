@@ -9,7 +9,7 @@ test;
   }
 
   class B extends A {
-    void [[1|n]]() {}
+    void [[@1|n]]() {}
   }
 
   class C extends B {

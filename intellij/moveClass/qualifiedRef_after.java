@@ -17,7 +17,7 @@ test;
 [p1] {
 [StaticMethod]
     package p1;
-  public class [[1|StaticMethod]] {
+  public class [[@1|StaticMethod]] {
       public static int bar() {return 1;}
   }
 

@@ -2,7 +2,7 @@ test;
 [Foo]
     public class Foo {
 
-      public static void [[1|bar]](final Runnable runnable) {
+      public static void [[@1|bar]](final Runnable runnable) {
       runnable.run();
     }
   }

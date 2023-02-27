@@ -2,37 +2,38 @@ test;
 [pack1] {
 [TopLevel]
     package pack1;
-  
+
   public class TopLevel {
   }
 [Client]
     package pack1;
-  
-  public class Client { 
+
+  public class Client {
       public static void main(String[] args) {
-          StaticInner staticInner = new StaticInner();
-  
-          StaticInner.NonStaticInnerInner nonStaticInnerInner
-              = staticInner.new NonStaticInnerInner("Joe");
-  
+          [[->SI|StaticInner]] staticInner = new [[->SIc|StaticInner]]();
+
+          [[->NSII|NonStaticInnerInner|StaticInner.NonStaticInnerInner]] nonStaticInnerInner
+              = staticInner.new [[->NSIIc|NonStaticInnerInner]]("Joe");
+
           System.out.println(nonStaticInnerInner.toString());
       }
   }
 [StaticInner]
     package pack1;
-  
-  public class StaticInner {
-      public class NonStaticInnerInner {
+
+  public class [[@SI|StaticInner]] {
+      public [[@SIc|StaticInner]]() {}
+      public class [[@NSII|NonStaticInnerInner]] {
           private String name;
-  
-          public NonStaticInnerInner(String name) {
+
+          public [[@NSIIc|NonStaticInnerInner]](String name) {
               this.name = name;
           }
-  
+
           public String toString() {
               return name;
           }
       }
   }
-  
+
 }

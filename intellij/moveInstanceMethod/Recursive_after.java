@@ -1,8 +1,8 @@
 test;
 [MoveMethodTest]
     public class MoveMethodTest {
-      void foo () {
-        foo();
-        foo();
+      void [[@1|foo]] () {
+        [[->1|foo]]();
+        [[->1|foo]]();
       }
   }

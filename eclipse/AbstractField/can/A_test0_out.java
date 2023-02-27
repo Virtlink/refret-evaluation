@@ -3,7 +3,7 @@ test;
 [A]
     package p;
   class A{
-  	private int [[1|f]];
+  	private int [[@1|f]];
   	void m(){
   		int g= getF();
   	}

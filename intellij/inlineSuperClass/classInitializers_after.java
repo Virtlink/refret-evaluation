@@ -1,6 +1,6 @@
 test;
 [Test]
-    class [[type|Test]] {
+    class [[@type|Test]] {
       static {
         System.out.println("static");
       }

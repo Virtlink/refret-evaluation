@@ -1,7 +1,7 @@
 test;
 [Test]
     class A {
-      private String [[1|f]];
+      private String [[@1|f]];
 
       public void m() {
           m1();

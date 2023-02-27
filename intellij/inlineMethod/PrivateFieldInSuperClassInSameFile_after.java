@@ -2,7 +2,7 @@ test;
 [Test]
     class Test {
     class A {
-      private Integer [[1|i]] = 0;
+      private Integer [[@1|i]] = 0;
 
     }
 

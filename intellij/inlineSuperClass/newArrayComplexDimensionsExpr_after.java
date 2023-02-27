@@ -1,7 +1,7 @@
 test;
 [Test]
     class Test {
-      static int [[1|bar]](){return 1;}
+      static int [[@1|bar]](){return 1;}
 
       void foo() {
         Test s = new Test();

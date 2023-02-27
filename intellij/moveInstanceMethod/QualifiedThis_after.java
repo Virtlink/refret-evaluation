@@ -1,17 +1,17 @@
 test;
 [Test]
     class Foreign {
-      void foo(MoveMethodTest moveMethodTest) {
+      void foo(MoveMethodTest [[@2|moveMethodTest]]) {
           class Inner {
               {
-                  moveMethodTest.bar();
+                  [[->1|&2|MoveMethodTest.this.bar|moveMethodTest.bar]]();
               }
           }
       }
   }
-  
+
   class MoveMethodTest {
-      void bar() {}
-  
+      void [[@1|bar]]() {}
+
   }
-  
+

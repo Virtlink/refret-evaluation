@@ -12,5 +12,5 @@ test;
   }
 
   class B {
-      public static String [[1|f]] = null;
+      public static String [[@1|f]] = null;
   }

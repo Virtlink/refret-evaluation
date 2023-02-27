@@ -1,7 +1,7 @@
 test;
 [Test]
     class A {
-    void [[1|bar]]() {}
+    void [[@1|bar]]() {}
   }
 
   class B extends A {

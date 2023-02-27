@@ -1,7 +1,7 @@
 test;
 [A]
     public class A {
-    void [[2|test]]() {
+    void [[@2|test]]() {
       String[] myValue = [[->1|CONST]];
     }
 
@@ -13,5 +13,5 @@ test;
       [[->2|test]]();
     }
 
-    public static final String[] [[1|CONST]] = new String[] { "A", "B" };
+    public static final String[] [[@1|CONST]] = new String[] { "A", "B" };
   }

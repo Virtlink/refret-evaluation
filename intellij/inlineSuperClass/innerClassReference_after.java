@@ -11,7 +11,7 @@ test;
          Test.InstInner inner2 = this.new InstInner();
       }
 
-      public static class [[1t|StInner]] {}
+      public static class [[@1t|StInner]] {}
 
-      public class [[2t|InstInner]] {}
+      public class [[@2t|InstInner]] {}
   }

@@ -2,14 +2,14 @@ test;
 [Test]
     class A {
   }
-  
-  class B {
-  
+
+  class [[@b|B]] {
+
       void bar() {
         new Runnable() {
           @Override
           public void run() {
-            System.out.println(B.this);
+            System.out.println([[->b|b|B.this]]);
           }
         }.run();
       }

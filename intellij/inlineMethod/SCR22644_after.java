@@ -10,7 +10,7 @@ test;
   }
 
   public class UtilClass {
-      public static void [[1|doSomething]](SuperClass superClass) {
+      public static void [[@1|doSomething]](SuperClass superClass) {
           // ...
       }
   }

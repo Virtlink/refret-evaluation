@@ -1,7 +1,7 @@
 test;
 [Test]
-    class [[type|Test]] {
-    public [[cons|Test]]() {
+    class [[@type|Test]] {
+    public [[@cons|Test]]() {
     }
 
       public static [[->type|Test]][] getArray() {

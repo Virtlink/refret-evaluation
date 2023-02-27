@@ -2,11 +2,11 @@ test;
 [Test]
     class Bar {
 
-      int [[t|methodTrue]]() {
+      int [[@t|methodTrue]]() {
       return 3;
     }
 
-    int [[f|methodFalse]]() {
+    int [[@f|methodFalse]]() {
       return 5;
     }
   }
@@ -14,18 +14,18 @@ test;
   class Foo {
     // IDEA-229317
     void method() {
-        Bar bar2 = new Bar();
+        Bar [[@2|bar2]] = new Bar();
 
-        System.out.println([[->t|methodTrue|bar2.methodTrue]]());   // TODO: context
-        Bar bar1 = new Bar();
+        System.out.println([[->t|&2|methodTrue|bar2.methodTrue]]());
+        Bar [[@1|bar1]] = new Bar();
 
-        System.out.println([[->f|methodFalse|bar1.methodFalse]]());   // TODO: context
+        System.out.println([[->f|&1|methodFalse|bar1.methodFalse]]());
         int result;
-        Bar bar = new Bar();
+        Bar [[@0|bar]] = new Bar();
         if (Math.random() > 0.5) {
-            result = [[->t|methodTrue|bar.methodTrue]]();   // TODO: context
+            result = [[->t|&0|methodTrue|bar.methodTrue]]();
         } else {
-            result = [[->f|methodFalse|bar.methodFalse]]();   // TODO: context
+            result = [[->f|&0|methodFalse|bar.methodFalse]]();
         }
 
         System.out.println(result);

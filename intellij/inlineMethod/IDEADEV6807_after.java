@@ -1,7 +1,7 @@
 test;
 [Test]
     class Base {
-      protected int [[1|f]];
+      protected int [[@1|f]];
 
 
   }

@@ -7,7 +7,7 @@ test;
     }
 
     class B extends A {
-      public void [[1|g]]() {
+      public void [[@1|g]]() {
 
       }
       public void h() {

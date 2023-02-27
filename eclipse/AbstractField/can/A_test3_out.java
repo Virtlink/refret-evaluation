@@ -8,7 +8,7 @@ test;
   	void m(){
   		int g= [[->1|getF]]();
   	}
-  	public int [[1|getF]](){
+  	public int [[@1|getF]](){
   		return f;
   	}
   }

@@ -2,7 +2,7 @@ test;
 [Test]
     abstract class Test {
 
-      void [[1|foo]]() {
+      void [[@1|foo]]() {
     }
   }
   class Test2 extends Test {

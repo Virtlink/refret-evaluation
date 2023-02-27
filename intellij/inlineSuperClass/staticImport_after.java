@@ -13,8 +13,8 @@ test;
     package p;
 
   public class Test {
-      public static final String [[1|CONSTANT]] = "";
+      public static final String [[@1|CONSTANT]] = "";
 
-      public static void [[2|statMeth]]() {}
+      public static void [[@2|statMeth]]() {}
   }
 }

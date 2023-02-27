@@ -2,7 +2,7 @@ test;
 [Foo]
     public class Foo {
       String getComponent(Integer i) { return null; }
-      Integer [[1|myI]];
+      Integer [[@1|myI]];
 
       public void usage() {
           if (myI != null)

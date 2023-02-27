@@ -1,23 +1,23 @@
 test;
 [Test]
     class CommandQueue {
-  
-      void f(CommandManager commandManager) {
-        commandManager.g();
+
+      void f(CommandManager [[@2|commandManager]]) {
+        [[->1|&2|g|commandManager.g]]();
       }
   }
-  
+
   class CommandManager {
-  
-      void g() {
-  
+
+      void [[@1|g]]() {
+
       }
-  
+
       CommandQueue getCommandQueue() {
           return null;
       }
   }
-  
+
   class Application {
       CommandManager myManager;
       {

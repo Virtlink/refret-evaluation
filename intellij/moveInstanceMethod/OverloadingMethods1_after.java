@@ -2,13 +2,13 @@ test;
 [Test]
     class B extends A {
   }
-  
+
   class A {
-    void m(){}
+    void [[@1|m]](){}
   }
-  
+
   class C {
-      void n(B b){
-        b.m();
+      void n(B [[@2|b]]){
+        [[->1|&2|m|b.m]]();
       }
   }

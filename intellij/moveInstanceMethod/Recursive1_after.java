@@ -1,16 +1,16 @@
 test;
 [Test]
     class FirstClass {
-  
+
       void y() {
-          new SecondClass().x();
+          new SecondClass().[[->1|x]]();
       }
   }
-  
+
   class SecondClass {
       SecondClass g() { return null; }
-  
-      void x() {
-          if (this != null) g().x();
+
+      void [[@1|x]]() {
+          if (this != null) g().[[->1|x]]();
       }
   }

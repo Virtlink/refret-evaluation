@@ -1,15 +1,15 @@
 test;
 [Test]
     class Foreign {
-      void foo(MoveMethodTest moveMethodTest, MoveMethodTest.Inner inner) {
-         moveMethodTest.bar (inner);
+      void foo(MoveMethodTest [[@2|moveMethodTest]], MoveMethodTest.Inner inner) {
+         [[->1|&2|bar|moveMethodTest.bar]] (inner);
       }
   }
-  
+
   class MoveMethodTest {
-      void bar(Inner inner) {}
-  
+      void [[@1|bar]](Inner inner) {}
+
       class Inner {
       }
   }
-  
+
