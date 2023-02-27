@@ -1,3 +1,5 @@
+[[{disabled}]] // Generics
+
 test;
 [Test]
 

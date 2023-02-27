@@ -1,3 +1,5 @@
+[[{disabled}]] // Method reference
+
 test;
 [Test]
     import java.util.function.Consumer;

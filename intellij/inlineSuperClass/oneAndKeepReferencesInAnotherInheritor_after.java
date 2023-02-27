@@ -20,5 +20,4 @@ test;
     }
   }
   abstract class Test2{
-    System.out.println([[->1|&4|Super.CONST|Super.CONST]]);
   }

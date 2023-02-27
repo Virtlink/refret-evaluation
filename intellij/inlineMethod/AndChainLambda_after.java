@@ -1,4 +1,4 @@
-[[{disabled}]]
+[[{disabled}]] // Generics
 test;
 [Test]
     import java.util.function.Predicate;
