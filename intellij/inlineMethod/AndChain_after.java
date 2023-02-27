@@ -15,7 +15,7 @@ test;
         if (isEmpty()) return false;
         if ([[->2|isEmpty]]())
           throw new NoSuchElementException("Queue is empty");
-        return [[->1|items]][ [[->3|head]]] > x;
+        return [[->1|items]][ [[->3|head]] ] > x;
     }
 
     // other methods
