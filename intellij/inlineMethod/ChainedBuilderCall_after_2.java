@@ -22,7 +22,7 @@ test;
       public static void main(String[] args) {
           LegacyType lt = new LegacyType();
           MyObjBuilder [[@3|myObjBuilder]] = MyObj.builder();
-          myObjBuilder.memberVar1([[->2|&3|convertToNewType(lt)|myObjBuilder.convertToNewType(lt)]]);
+          myObjBuilder.memberVar1([[->1|&3|convertToNewType(lt)|myObjBuilder.convertToNewType(lt)]]);
           MyObj obj = myObjBuilder
                   .memberVar2();
       }
