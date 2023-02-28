@@ -20,6 +20,6 @@ test;
   class Application {
       CommandManager myManager;
       {
-          myManager.getCommandQueue().[[->1|f]]();
+          myManager.getCommandQueue().[[->1|f()]];
       }
   }

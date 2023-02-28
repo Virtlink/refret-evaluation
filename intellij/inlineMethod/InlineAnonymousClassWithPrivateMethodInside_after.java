@@ -9,7 +9,7 @@ test;
 
   class Bar {
     public static void main(String[] args) {
-        [[->1|bar|Foo.bar]](new Runnable() {
+        [[->1|bar(new Runnable() {
           @Override
           public void run() {
             doRun();
@@ -18,6 +18,15 @@ test;
           private void doRun() {
             // Woo-hoo
           }
-        });
+        })|Foo.bar(new Runnable() {
+          @Override
+          public void run() {
+            doRun();
+          }
+
+          private void doRun() {
+            // Woo-hoo
+          }
+        })]];
     }
   }

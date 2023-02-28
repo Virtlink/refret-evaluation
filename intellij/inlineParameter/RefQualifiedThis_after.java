@@ -7,7 +7,7 @@ test;
     class User {
       public class Subject {
         public void withClass() {
-          System.out.println([[->1|&2|toString|Outer.this.toString]]());
+          System.out.println([[->1|&2|toString()|Outer.this.toString()]]);
         }
       }
 

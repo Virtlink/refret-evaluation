@@ -13,7 +13,7 @@ test;
       // true if the first element of the queue is greater than specified number
     public boolean firstIsGreaterThan(int x) {
         if (isEmpty()) return false;
-        if ([[->2|isEmpty]]())
+        if ([[->2|isEmpty()]])
           throw new NoSuchElementException("Queue is empty");
         return [[->1|items]][ [[->3|head]] ] > x;
     }

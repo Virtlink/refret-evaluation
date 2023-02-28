@@ -6,11 +6,11 @@ test;
     }
 
     void callTest() {
-      [[->2|test]]();
+      [[->2|test()]];
     }
 
     void callTest2() {
-      [[->2|test]]();
+      [[->2|test()]];
     }
 
     public static final String[] [[@1|CONST]] = new String[] { "A", "B" };

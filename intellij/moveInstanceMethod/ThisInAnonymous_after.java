@@ -8,11 +8,15 @@ test;
       void [[@1|acceptChildren]](JetVisitor v) {}
 
       private void prepareAnonymousClasses() {
-          [[->1|aClass.acceptChildren|acceptChildren]](new JetVisitor() {   // Context: this
+          [[->1|aClass.acceptChildren(new JetVisitor() {   // Context: this
               public void visitJetElement(JetElement element) {
                   element.acceptChildren(this);
               }
-          });
+          })|acceptChildren(new JetVisitor() {   // Context: this
+              public void visitJetElement(JetElement element) {
+                  element.acceptChildren(this);
+              }
+          })]];
       }
   }
 

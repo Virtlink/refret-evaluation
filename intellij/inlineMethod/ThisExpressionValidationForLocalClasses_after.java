@@ -15,6 +15,6 @@ test;
   class C extends B {
     {
         class Local {}
-        [[->1|n]]();
+        [[->1|n()]];
     }
   }

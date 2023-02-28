@@ -10,6 +10,6 @@ test;
     }
 
     void err() {
-        [[->1|bar|super.bar]]();
+        [[->1|bar()|super.bar()]];
     }
   }

@@ -4,7 +4,7 @@ test;
 
   class Usage {
     void bar(Test [[@2|s]]) {
-      [[->1|&2|foo|s.foo]]();
+      [[->1|&2|foo()|s.foo()]];
     }
   }
 [p] {

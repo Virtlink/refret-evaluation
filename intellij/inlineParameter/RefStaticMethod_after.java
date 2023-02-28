@@ -13,7 +13,7 @@ test;
 
   class StaticRefMoveSubject {
     public void subject() {
-        int subj = [[->1|&2|init|StaticRefMove.init]]();
+        int subj = [[->1|&2|init()|StaticRefMove.init()]];
         System.out.println(subj);
     }
   }

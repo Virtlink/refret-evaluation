@@ -3,7 +3,7 @@ test;
     public class A {
 
       public void show(B b){
-          [[->1|m|b.m]](this);
+          [[->1|m(this)|b.m(this)]];
       }
 
       public void m (C c){

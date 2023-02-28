@@ -9,7 +9,7 @@ test;
   class B extends A {
 
       void test(){
-          [[->1|foo|super.foo]]();  // Context: super
+          [[->1|foo()|super.foo()]];  // Context: super
       }
 
     void foo() {

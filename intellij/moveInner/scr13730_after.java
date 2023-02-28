@@ -10,10 +10,10 @@ test;
 
   public class Client {
       public static void main(String[] args) {
-          [[->SI|StaticInner]] staticInner = new [[->SIc|StaticInner]]();
+          [[->SI|StaticInner]] staticInner = new [[->SIc|StaticInner()]];
 
           [[->NSII|NonStaticInnerInner|StaticInner.NonStaticInnerInner]] nonStaticInnerInner
-              = staticInner.new [[->NSIIc|NonStaticInnerInner]]("Joe");
+              = staticInner.new [[->NSIIc|NonStaticInnerInner("Joe")]];
 
           System.out.println(nonStaticInnerInner.toString());
       }

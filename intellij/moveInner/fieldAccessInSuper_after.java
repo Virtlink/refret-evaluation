@@ -7,7 +7,7 @@ test;
       private final A a;
 
       public B(A a) {
-      super([[->1|A.this.foo|a.foo]]());    // Context: A.this?
+      super([[->1|A.this.foo()|a.foo()]]);    // Context: A.this?
           this.a = a;
       }
   }

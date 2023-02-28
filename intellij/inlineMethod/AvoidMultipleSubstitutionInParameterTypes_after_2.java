@@ -9,7 +9,7 @@ test;
 
   class A {
     <T> void bar(List<T> [[@1|root]], LinkedHashSet<List<T>> [[@2|list]]) {
-        [[->3|nested]]([[->2|list]], [[->1|root]]);
+        nested([[->2|list]], [[->1|root]]);
     }
 
 

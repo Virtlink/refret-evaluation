@@ -3,7 +3,7 @@ test;
     class CommandQueue {
 
       void f(CommandManager [[@2|commandManager]]) {
-        [[->1|&2|g|commandManager.g]]();
+        [[->1|&2|g()|commandManager.g()]];
       }
   }
 

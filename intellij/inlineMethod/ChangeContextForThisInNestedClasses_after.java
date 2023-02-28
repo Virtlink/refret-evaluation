@@ -10,7 +10,7 @@ test;
     {
         new Object() {
           void foo() {
-            [[->1|Test.this.foo|Test2.this.foo]]();
+            [[->1|Test.this.foo()|Test2.this.foo()]];
           }
         };
     }

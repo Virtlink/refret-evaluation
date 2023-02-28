@@ -5,7 +5,7 @@ test;
 
   public class SubClass extends SuperClass {
       public void doSomethingElse() {
-          [[->1|doSomething|UtilClass.doSomething]](this);
+          [[->1|doSomething(this)|UtilClass.doSomething(this)]];
       }
   }
 

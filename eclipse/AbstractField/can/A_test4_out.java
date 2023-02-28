@@ -15,7 +15,7 @@ test;
   class B{
   	int m(){
   		A a= new A();
-  		return [[->1|a.getF]]();
+  		return [[->1|a.getF()]];
   	}
   }
 }

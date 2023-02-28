@@ -6,8 +6,8 @@ test;
     }
 
     public Object foo(Set [[@2|bar]]) {
-      if ([[->1|&2|size|bar.size]]() != null) {// Inline this
-          [[->1|&2|size|bar.size]](); // or inline this
+      if ([[->1|&2|size()|bar.size()]] != null) {// Inline this
+          [[->1|&2|size()|bar.size()]]; // or inline this
           return null;
       }
 

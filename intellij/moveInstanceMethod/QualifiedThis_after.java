@@ -4,7 +4,7 @@ test;
       void foo(MoveMethodTest [[@2|moveMethodTest]]) {
           class Inner {
               {
-                  [[->1|&2|MoveMethodTest.this.bar|moveMethodTest.bar]]();
+                  [[->1|&2|MoveMethodTest.this.bar()|moveMethodTest.bar()]];
               }
           }
       }

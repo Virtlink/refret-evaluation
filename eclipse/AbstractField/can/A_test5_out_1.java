@@ -6,7 +6,7 @@ test;
   class A{
   	private int [[@4|f]];
   	void m(){
-  		[[->2|setF]]([[->1|getF]]());
+  		[[->2|setF(getF())]];
   	}
   	public int [[@1|getF]](){
   		return f;
@@ -18,8 +18,8 @@ test;
   class B{
   	int m(){
   		A a= new A();
-  		[[->2|a.setF]]([[->1|a.getF]]());
-  		return [[->1|a.getF]]();
+  		[[->2|a.setF(a.getF())]];
+  		return [[->1|a.getF()]];
   	}
   }
 }

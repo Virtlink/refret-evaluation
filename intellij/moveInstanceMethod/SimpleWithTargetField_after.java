@@ -11,7 +11,7 @@ test;
       Foreign [[@2|myForeign]];
 
       void bar () {
-          [[->1|&2|foo|myForeign.foo]](this);
+          [[->1|&2|foo(this)|myForeign.foo(this)]];
       }
   }
 

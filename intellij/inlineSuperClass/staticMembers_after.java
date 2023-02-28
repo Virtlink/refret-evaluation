@@ -9,6 +9,6 @@ test;
 
       void bar() {
       System.out.println([[->1|Super.S|Test.S]]);
-      [[->2|Super.foo|Test.foo]]();
+      [[->2|Super.foo()|Test.foo()]];
     }
   }

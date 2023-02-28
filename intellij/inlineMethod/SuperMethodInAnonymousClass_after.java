@@ -15,7 +15,7 @@ test;
 
           @Override
           public void run() {
-              [[->1|g]]();
+              [[->1|g()]];
           }
         }.run();
       }

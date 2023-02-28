@@ -11,7 +11,7 @@ test;
       }
 
       public void run() {
-      [[->1|&2|iAmProtected|d.iAmProtected]]();
+      [[->1|&2|iAmProtected()|d.iAmProtected()]];
     }
   }
 

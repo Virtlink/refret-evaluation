@@ -8,7 +8,7 @@ test;
       private int myInt;
 
       public void withClass() {
-        myInt += [[->1|&2|hashCode|User.this.hashCode]]();
+        myInt += [[->1|&2|hashCode()|User.this.hashCode()]];
       }
     }
 

@@ -3,7 +3,7 @@ test;
     class FirstClass {
 
       void y() {
-          new SecondClass().[[->1|x]]();
+          new SecondClass().[[->1|x()]];
       }
   }
 
