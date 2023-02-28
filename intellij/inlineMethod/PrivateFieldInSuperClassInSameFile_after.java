@@ -7,8 +7,8 @@ test;
     }
 
     class B extends A {
-      void bar(A a) {
-          [[->1|i|a.i]].toString();
+      void bar(A [[@2|a]]) {
+          [[->1|&2|i|a.i]].toString();
       }
     }
   }
