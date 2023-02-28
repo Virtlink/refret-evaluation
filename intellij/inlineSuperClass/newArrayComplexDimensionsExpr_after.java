@@ -11,6 +11,6 @@ test;
 [Usage]
     class Usage {
     void ba() {
-      Test[][] s = new Test[ [[->1|bar()|Test.bar()]]][];
+      Test[][] s = new Test[ [[->1|bar()|Test.bar()]] ][];
     }
   }
