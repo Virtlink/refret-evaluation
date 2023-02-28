@@ -3,7 +3,7 @@ test;
     class FirstClass {
 
       void y() {
-          new SecondClass().[[->1|x()]];
+          [[->1|new SecondClass().x()]];
       }
   }
 
@@ -11,6 +11,6 @@ test;
       SecondClass g() { return null; }
 
       void [[@1|x]]() {
-          if (this != null) g().[[->1|x]]();
+          if (this != null) [[->1|g().x()]];
       }
   }
