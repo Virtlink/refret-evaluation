@@ -1,6 +1,6 @@
 test;
 [Subject]
-    class [[@2|User]] {
+    class User {
 
       int [[@1|hashCode]]() { return 0; }
 
@@ -8,7 +8,7 @@ test;
       private int myInt;
 
       public void withClass() {
-        myInt += [[->1|&2|hashCode()|User.this.hashCode()]];
+        myInt += [[->1|hashCode()|User.this.hashCode()]];
       }
     }
 

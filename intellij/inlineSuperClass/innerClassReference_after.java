@@ -3,7 +3,7 @@ test;
     class Test {
      public void contextChild() {
         [[->1t|StInner]] inner1 = new StInner();
-        [[->2t|InstInner|Test.InstInner]] inner2 = this.new InstInner();
+        [[->2t|Test.InstInner|Test.InstInner]] inner2 = this.new InstInner();
      }
 
       void foo() {

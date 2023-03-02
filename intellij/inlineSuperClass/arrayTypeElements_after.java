@@ -1,14 +1,14 @@
 test;
 [Test]
     class [[@type|Test]] {
-    public [[@cons|Test]]() {
+    public Test() {
     }
 
       public static [[->type|Test]][] getArray() {
-        return new [[->cons|Test]][0];
+        return new [[->type|Test]][0];
       }
 
       public static [[->type|Test]][] getArrayWithInitializer() {
-        return new [[->cons|Test]][]{};
+        return new [[->type|Test]][]{};
       }
   }

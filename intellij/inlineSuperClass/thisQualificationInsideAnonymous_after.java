@@ -5,8 +5,8 @@ test;
       protected final Object [[@2|myBizz]];
 
       public Test() {
-          [[->1|myBar|Test.this.myBar]] = new Object() {
+          [[->1|myBar|myBar]] = new Object() { // Was `Test.this.myBar`, but our option is better.
           };
-          [[->2|myBizz|Test.this.myBizz]] = null;
+          [[->2|myBizz|myBizz]] = null;        // Was `Test.this.myBizz`, but our option is better.
       }
   }

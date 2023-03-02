@@ -2,8 +2,8 @@ test;
 [Test]
     class A {
 
-      void n(B b) {
-          [[->1|m()|b.m(this)]];
+      void n(B [[@2|b]]) {
+          [[->1|&2|m(this)|b.m(this)]];
       }
 
   }

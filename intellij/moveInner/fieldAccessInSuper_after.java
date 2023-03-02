@@ -6,8 +6,8 @@ test;
   class B extends S{
       private final A a;
 
-      public B(A a) {
-      super([[->1|A.this.foo()|a.foo()]]);    // Context: A.this?
+      public B(A [[@2|a]]) {
+      super([[->1|&2|A.this.foo()|a.foo()]]);
           this.a = a;
       }
   }

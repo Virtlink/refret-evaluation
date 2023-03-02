@@ -1,5 +1,7 @@
 test;
 [Test]
+    // Unsupported: guess access through field `flam`.
+
     class Flim {
       Flam flam = new Flam();
 

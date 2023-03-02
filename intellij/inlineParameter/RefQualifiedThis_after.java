@@ -1,13 +1,13 @@
 test;
 [Subject]
-    class [[@2|Outer]] {
+    class Outer {
 
     String [[@1|toString]]() { return ""; }
 
     class User {
       public class Subject {
         public void withClass() {
-          System.out.println([[->1|&2|toString()|Outer.this.toString()]]);
+          System.out.println([[->1|toString()|Outer.this.toString()]]);
         }
       }
 
