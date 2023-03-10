@@ -13,7 +13,7 @@ test;
         new B() {
           @Override
           public void run() {
-            [[->1|moo(this)|A.this.moo(this)]];
+            [[->1|moo(this)|moo(this)]]; // was A.this.moo(this), but our alternative is better
           }
         };
       }

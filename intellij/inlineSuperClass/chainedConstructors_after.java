@@ -4,7 +4,7 @@ test;
       int i;
 
       public [[@cons1|Test]]() {
-          [[->cons3|this(1)]];
+          [[->cons3| this(1) ]];
       }
 
       [[@cons2|Test]](int i, int j) {
@@ -12,6 +12,6 @@ test;
       }
 
       [[@cons3|Test]](int i) {
-        [[->cons2|this(i, 0)]];
+        [[->cons2|this(i, 0);]]
       }
   }
