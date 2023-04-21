@@ -1,6 +1,11 @@
+[[{move-class(1, p)}]]
 test;
 [p1] {
 [MyClass]
     package p1;
-  class MyClass{}
+  class [[@1|MyClass]]{}
+}
+[p] {
+[MyClass]
+    package [[@p|p]];
 }

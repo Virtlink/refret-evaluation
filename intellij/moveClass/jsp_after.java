@@ -1,12 +1,10 @@
 test;
-[pack2] {
+[pack1] {
 [TestClass]
-    package pack2;
+  package pack1;
   
-  public class TestClass {
-  }
 }
-[WEB-INF] {
+[webinf] {
 [TestTEI]
     
   import javax.servlet.jsp.tagext.TagExtraInfo;
@@ -19,4 +17,11 @@ test;
     }
   }
   
+}
+[pack2] {
+[TestClass]
+  package pack2;
+  
+  public class TestClass {
+  }
 }

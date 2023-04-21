@@ -1,8 +1,8 @@
 test;
 [pack2] {
 [A]
-    package pack2;
-  
+  package pack2;
+
   public class A {
       public void method () {
           class X {
