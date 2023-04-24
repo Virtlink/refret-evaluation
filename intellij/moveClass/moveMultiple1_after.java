@@ -7,9 +7,6 @@ test;
     pack2.Class2 a;
     pack2.Class2 b;
   }
-[Class2]
-  package pack1;
-  
 }
 [pack2] {
 [Class2]

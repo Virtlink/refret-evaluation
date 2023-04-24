@@ -5,11 +5,6 @@ test;
   public class StaticMethod {
       public static int bar() {return 1;}
   }
-
-}
-[p1] {
-[Test]
-  package p1;
 }
 [p2] {
 [Test]

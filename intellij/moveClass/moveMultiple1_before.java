@@ -1,4 +1,3 @@
-[[# fails]]
 [[{move-class(1, pack2)}]]
 test;
 [pack1] {

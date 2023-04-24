@@ -3,7 +3,7 @@
 test;
 [pack1] {
 [Class1]
-    package pack1;
+  package pack1;
   
   public class [[@1|Class1]] {
     void foo(){
@@ -11,9 +11,10 @@ test;
     }
   }
 [Class2]
-    package pack1;
+  package pack1;
   
   public class Class2 {
+    static int xxx() { return 0; }
   }
 }
 [pack2] {
